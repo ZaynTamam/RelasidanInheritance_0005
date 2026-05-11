@@ -1,7 +1,7 @@
 #ifndef IBU_H
 #define IBU_H
 #include <vector>
-
+#include "anak.h"
 class ibu {
 public:
     string nama;
@@ -16,7 +16,6 @@ public:
     void tambahAnak(anak*);
     void cetakAnak();
 };
-
 void ibu::tambahAnak(anak* pAnak) {
     daftar_anak.push_back(pAnak);
 }
@@ -30,5 +29,4 @@ void ibu::cetakAnak() {
     }
     cout << endl;
 }
-
 #endif
